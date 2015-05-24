@@ -1,0 +1,37 @@
+package exercicio3;
+
+import java.util.Scanner;
+
+public class principal {
+
+	public static void main(String[] args) {
+		
+		int a;
+		int b;
+		int c;
+		int d = 0;
+		Scanner ler = new Scanner(System.in);
+		
+		System.out.println("Informe o primeiro valor: ");
+		a = ler.nextInt();
+		System.out.println("Informe o segundo valor: ");
+		b = ler.nextInt();
+		System.out.println("Informe o terceiro valor: ");
+		c = ler.nextInt();
+		
+		if(a<b && a<c){
+			d = a;
+		}if(b<a && b<c){
+			d = b;
+		}if(c<b && c<a){
+			d = c;
+		}
+		System.out.println("O menor valor é: " + d);
+		if (d<100){
+			System.out.println("O menor valor é menor que 100");
+		}
+		ler.close();
+
+	}
+
+}
